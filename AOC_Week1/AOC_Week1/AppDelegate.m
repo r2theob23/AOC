@@ -17,7 +17,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-//Start Week One Project
+//******************Start Week One Project**********************
     
     //Casting a float into an int
     float castingExample = 79.4;
@@ -42,7 +42,6 @@
     //End AND OR Comparison
     
     //If, Else if, Else
-    
     int money = 100;
     int costOfIpad = 320;
     int costOfNexus7 = 200;
@@ -56,14 +55,22 @@
     }
     //End If, Else if, Else
     
-    //For Loop
-    for (int savings=0; savings <= 320; savings+=20){
-        NSLog(@"Saving up for the iPad Mini, currently have %d dollars in savings", savings);
-        NSLog(@"I've saved enough money, let's go buy my iPad Mini!!!");
-            for (int savedMoney=320; savedMoney > 0; savedMoney-=320) {
-                NSLog(@"iPad Mini is MINE!!!");
+    //For Loop & nested for loop
+    for (int savings=0; savings <= 320; savings+=40){
+        for (int weeks; weeks <= 1; weeks++) {
+            NSLog(@"This week I saved %d dollars", savings);
         }
+}
+    //End For loop & nested for loop
+    
+    //While Loop
+    int gigs = 16;
+    while (gigs > 0) {
+        NSLog(@"Still have %d gigs of storage left on my new iPad Mini!!", gigs);
+        gigs-=2;
     }
+    NSLog(@"Out of storage, should have saved more for the 32 gig model!!!");
+    
     
     
     
