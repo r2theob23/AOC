@@ -16,7 +16,68 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+//Start Week One Project
+    
+    //Casting a float into an int
+    float castingExample = 79.4;
+    NSLog(@"castingExample=%.2f", castingExample);
+    NSLog(@"castingExample=%d", (int)castingExample);
+    //End Casting Example
+    
+    //AND OR Comparison
+    BOOL ipadInStock = YES;
+    BOOL nexusInStock = NO;
+    int myMoney = 350;
+    float ipadPrice = 329.00;
+    float nexusPrice = 200.00;
+    
+    if ((ipadInStock == YES) && (myMoney >= ipadPrice)) {
+        NSLog(@"iPad Mini is MINE!!");
+    }
+    
+    if ((nexusInStock == NO) || (myMoney >= nexusPrice)) {
+        NSLog(@"I Wanted the iPad anyway....");
+    }
+    //End AND OR Comparison
+    
+    //If, Else if, Else
+    
+    int money = 100;
+    int costOfIpad = 320;
+    int costOfNexus7 = 200;
+    
+    if (money > costOfIpad) {
+        NSLog(@"iPad Mini is MINE!!!");
+    }else if (money > costOfNexus7){
+        NSLog(@"Nexus 7 for me!!!");
+    }else {
+        NSLog(@"No new toy for me....boo");
+    }
+    //End If, Else if, Else
+    
+    //For Loop
+    for (int savings=0; savings <= 320; savings+=20){
+        NSLog(@"Saving up for the iPad Mini, currently have %d dollars in savings", savings);
+        NSLog(@"I've saved enough money, let's go buy my iPad Mini!!!");
+            for (int savedMoney=320; savedMoney > 0; savedMoney-=320) {
+                NSLog(@"iPad Mini is MINE!!!");
+        }
+    }
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
     return YES;
+    
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -47,3 +108,9 @@
 }
 
 @end
+
+
+
+
+
+
