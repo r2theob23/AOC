@@ -55,13 +55,18 @@
     }
     //End If, Else if, Else
     
-    //For Loop & nested for loop
+    //For Loop
     for (int savings=0; savings <= 320; savings+=40){
-        for (int weeks; weeks <= 1; weeks++) {
-            NSLog(@"This week I saved %d dollars", savings);
-        }
+        NSLog(@"Saving up for the iPad Mini, currently have %d dollars in savings", savings);
 }
-    //End For loop & nested for loop
+        NSLog(@"I've saved enough, time to visit the apple store!!");
+    //End For loop
+    
+    //Nested For Loop
+    for (int iPadMini=0; iPadMini < 1; iPadMini++) {
+        for (int money=320; money > 0; money-=320);
+        NSLog(@"Money gone, iPad Mini in hands!!!");
+    }    
     
     //While Loop
     int gigs = 16;
