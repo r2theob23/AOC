@@ -20,7 +20,7 @@
 //******************Start Week One Project**********************
     
     //Casting a float into an int
-    float castingExample = 79.4;
+    float castingExample = 79.4f;
     NSLog(@"castingExample=%.2f", castingExample);
     NSLog(@"castingExample=%d", (int)castingExample);
     //End Casting Example
@@ -29,8 +29,8 @@
     BOOL ipadInStock = YES;
     BOOL nexusInStock = NO;
     int myMoney = 350;
-    float ipadPrice = 329.00;
-    float nexusPrice = 200.00;
+    float ipadPrice = 329.00f;
+    float nexusPrice = 200.00f;
     
     if ((ipadInStock == YES) && (myMoney >= ipadPrice)) {
         NSLog(@"iPad Mini is MINE!!");
@@ -75,15 +75,6 @@
         gigs-=2;
     }
     NSLog(@"Out of storage, should have saved more for the 32 gig model!!!");
-    
-    
-    
-    
-    
-    
-
-    
-    
     
     
     
