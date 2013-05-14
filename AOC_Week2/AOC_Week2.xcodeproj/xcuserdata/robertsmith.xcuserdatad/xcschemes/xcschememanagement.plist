@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AOC_Week_2.xcscheme</key>
+		<key>AOC_Week2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>73FEECF51742DFDC009BE24E</key>
+		<key>73FEED361742E84E009BE24E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73FEED151742DFDC009BE24E</key>
+		<key>73FEED5C1742E84E009BE24E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
