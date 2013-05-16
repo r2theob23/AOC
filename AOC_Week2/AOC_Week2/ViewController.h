@@ -9,5 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+
+    UILabel *titleLabel;
+    UILabel *authorLabel;
+    UILabel *authorNameLabel;
+    UILabel *publishedLabel;
+    UILabel *datePublishedLabel;
+    UILabel *summaryLabel;
+    UILabel *summaryBodyLabel;
+    UILabel *listLabel;
+    UILabel *listItemsLabel;
+    
+
+};
+
 
 @end
