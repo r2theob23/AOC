@@ -20,7 +20,12 @@
     UILabel *summaryBodyLabel;
     UILabel *listLabel;
     UILabel *listItemsLabel;
-    
+    NSString *fighting;
+    NSString *ufc;
+    NSString *ladies;
+    NSString *infections;
+    NSString *fitness;
+    NSMutableString *listItems;
 
 };
 
