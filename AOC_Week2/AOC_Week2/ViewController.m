@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     //Background Color
     self.view.backgroundColor = [UIColor blueColor];
    
@@ -67,7 +68,7 @@
     summaryBodyLabel.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0.886 alpha:1] /*#0#ffe2*/;
     summaryBodyLabel.text = @"Professional cage fighter Forrest Griffin gives humorous advice on various topics including how to make it as a cage fighter              and 'how to be a real man'. ";
     summaryBodyLabel.textAlignment = NSTextAlignmentCenter;
-    summaryBodyLabel.textColor = [UIColor colorWithRed:0 green:0.475 blue:0.251 alpha:1] /*#0#7940*/;
+    summaryBodyLabel.textColor = [UIColor darkGrayColor];
     summaryBodyLabel.numberOfLines = 4;
     
     // List Label
@@ -77,34 +78,36 @@
     listLabel.textAlignment = NSTextAlignmentLeft;
     listLabel.textColor = [UIColor colorWithRed:0 green:0.251 blue:0.275 alpha:1] /*#0#4046*/;
     
-    //NSStrings
-    fighting = [[NSString alloc] initWithString:fighting];
-    ufc = [[NSString alloc] initWithString:ufc];
-    ladies = [[NSString alloc] initWithString:ladies];
-    infections = [[NSString alloc] initWithString:infections];
-    fitness = [[NSString alloc] initWithString:fitness];
+    //NSString Items
+    item1 = @" Fighting";
+    item2 = @" UFC";
+    item3 = @" Ladies";
+    item4 = @" Infections";
+    item5 = @" and Physical Fitness";
     
     //NSArray
-    NSArray *bookTopics = [[NSArray alloc] initWithObjects:fighting, ufc, ladies, infections, fitness, nil];
-    listItems = [[NSMutableString alloc]initWithString:
-                 
+    list = [[NSArray alloc]initWithObjects:item1, item2, item3, item4, item5, nil];
+            
+    //NSMutableString
+    listItems = [[NSMutableString alloc] initWithCapacity: 5];
+    
+    //Appeding NSMutableString with array of strings
+    
+    for (int i=0; i < list.count; i++) {
+        [listItems appendString:[list objectAtIndex:i]];
+        if (i < list.count -1){
+            [listItems appendString: @","];
+        }
 
-
-    //List Items Body Label
-    listItemsLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0.0f, 140.0f, 320.0f, 120.0f))]];
-    listItemsLabel.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0.886 alpha:1] /*#0#ffe2*/;
+    };
+    
+    //List Body Label
+    listItemsLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0.0f, 300.0f, 320.0f, 80.0f))];
+    listItemsLabel.backgroundColor = [UIColor colorWithRed:0.839 green:0.714 blue:0.902 alpha:1] /*#d6b6e6*/;
     listItemsLabel.text = listItems;
     listItemsLabel.textAlignment = NSTextAlignmentCenter;
-    listItemsLabel.textColor = [UIColor colorWithRed:0 green:0.475 blue:0.251 alpha:1] /*#0#7940*/;
+    listItemsLabel.textColor = [UIColor colorWithRed:0 green:0.318 blue:0.239 alpha:1] /*#00513d*/;
     listItemsLabel.numberOfLines = 4;
-    
-
-
-
-    
-    
-    
-    
     
     //Make Labels Visable
     [self.view addSubview:titleLabel];
@@ -115,6 +118,8 @@
     [self.view addSubview:summaryLabel];
     [self.view addSubview:summaryBodyLabel];
     [self.view addSubview:listLabel];
+    [self.view addSubview:listItemsLabel];
+
 
 
 
