@@ -453,6 +453,7 @@
 				73FEED711742E84E009BE24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73FEED721742E84E009BE24E /* Build configuration list for PBXNativeTarget "AOC_Week2Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +462,7 @@
 				73FEED741742E84E009BE24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
