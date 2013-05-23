@@ -9,5 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+
+
+}
+
+//------Functions--------
+
+-(NSInteger)addOne:(NSInteger)x1 addTwo:(NSInteger)x2;
+
+-(BOOL)compareOne:(NSInteger)y1 compareTwo:(NSInteger)y2;
+
+-(NSString*)appendOne:(NSString*)z1 appendTwo:(NSString*)z2;
+
+-(void)displayAlertWithString:(NSString*)string;
 
 @end
