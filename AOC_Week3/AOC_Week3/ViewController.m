@@ -47,7 +47,7 @@
 //displayAlertWithString function
 
 -(void)displayAlertWithString:(NSString*)string; {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hello" message:string delegate:self cancelButtonTitle:@"World" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:string delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
     [alert show];
 
 
@@ -58,9 +58,18 @@
 - (void)viewDidLoad
 {
     
-    // Calling Addition Function
-    int result = [self addOne:14 addTwo:27];
-    [
+    // Calling Addition Function to calculate x1 + x2
+    int numOne = 14;
+    int numTwo = 27;
+    int result = [self addOne:numOne addTwo:numTwo];
+    NSString*addAlert = [NSString stringWithFormat:@"The sum of %d + %d is %d", numOne, numTwo, result];
+    [self displayAlertWithString:addAlert];
+    
+    //Calling the Compare function to compare y1 & y2
+    
+    
+    
+
  
 
     
