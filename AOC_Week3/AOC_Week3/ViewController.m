@@ -14,14 +14,14 @@
 
 @implementation ViewController
 
-//Add Function
+//1. Create Add Function
 
 -(NSInteger)addOne:(NSInteger)x1 addTwo:(NSInteger)x2;
 {
     return x1 + x2;
 }
 
-//Compare Function
+//2. Create Compare Function
 
 -(BOOL)compareOne:(NSInteger)y1 compareTwo:(NSInteger)y2;
 {
@@ -34,7 +34,8 @@
 
 
 }
-//Append Two Strings Together
+
+//3. Create Append Function 
 
 - (NSString *)appendOne:(NSString *)z1 appendTwo:(NSString *)z2
 {
@@ -42,7 +43,8 @@
     [myString appendString:z2];
     return myString;
 }
-//displayAlertWithString function
+
+//5. Create displayAlertWithString function
 
 -(void)displayAlertWithString:(NSString*)string; {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:string delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
@@ -56,27 +58,29 @@
 - (void)viewDidLoad
 {
     
-    // Calling Addition Function to calculate x1 + x2
+//4. Calling the append function to combine two mutableStrings
     
-    int numOne = 14;
-    int numTwo = 27;
-    int result = [self addOne:numOne addTwo:numTwo];
-    NSString*addAlert = [NSString stringWithFormat:@"The sum of %d + %d is %d", numOne, numTwo, result];
-    [self displayAlertWithString:addAlert];
+[self displayAlertWithString:[self appendOne:@"Hello " appendTwo:@"World!"]];
     
-    //Calling the Compare function to compare y1 & y2
+//6. Calling Addition Function to calculate x1 + x2
     
-    int boolOne = 50;
-    int boolTwo = 76;
+int numOne = 14;
+int numTwo = 27;
+int result = [self addOne:numOne addTwo:numTwo];
+NSString*addAlert = [NSString stringWithFormat:@"The sum of %d + %d is %d", numOne, numTwo, result];
+[self displayAlertWithString:addAlert];
+    
+//7. Bundle the result of add function 
+    
+//9. Calling the Compare function to compare y1 & y2
+    
+int boolOne = 50;
+int boolTwo = 76;
     if ([self  compareOne:boolOne compareTwo:boolTwo]) {
         [self displayAlertWithString:[NSString stringWithFormat:@"%i and %i are equal", boolOne, boolTwo]];
     }else {
         [self displayAlertWithString:[NSString stringWithFormat:@"%i and %i are not equal", boolOne, boolTwo]];
     }
-    
-    //Calling the append function to combine two mutableStrings
-    
-    [self displayAlertWithString:[self appendOne:@"Hello " appendTwo:@"World!"]];
     
 //********************************************************************************************************************************
     
