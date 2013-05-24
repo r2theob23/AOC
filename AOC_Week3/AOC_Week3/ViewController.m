@@ -34,7 +34,6 @@
 
 
 }
-
 //Append Two Strings Together
 
 - (NSString *)appendOne:(NSString *)z1 appendTwo:(NSString *)z2
@@ -43,7 +42,6 @@
     [myString appendString:z2];
     return myString;
 }
-
 //displayAlertWithString function
 
 -(void)displayAlertWithString:(NSString*)string; {
@@ -53,12 +51,13 @@
 
 }
 
-
+//********************************************************************************************************************************
 
 - (void)viewDidLoad
 {
     
     // Calling Addition Function to calculate x1 + x2
+    
     int numOne = 14;
     int numTwo = 27;
     int result = [self addOne:numOne addTwo:numTwo];
@@ -67,17 +66,19 @@
     
     //Calling the Compare function to compare y1 & y2
     
+    int boolOne = 50;
+    int boolTwo = 76;
+    if ([self  compareOne:boolOne compareTwo:boolTwo]) {
+        [self displayAlertWithString:[NSString stringWithFormat:@"%i and %i are equal", boolOne, boolTwo]];
+    }else {
+        [self displayAlertWithString:[NSString stringWithFormat:@"%i and %i are not equal", boolOne, boolTwo]];
+    }
     
+    //Calling the append function to combine two mutableStrings
     
-
- 
-
+    [self displayAlertWithString:[self appendOne:@"Hello " appendTwo:@"World!"]];
     
-    
-    
-    
-    
-    
+//********************************************************************************************************************************
     
     
     [super viewDidLoad];
