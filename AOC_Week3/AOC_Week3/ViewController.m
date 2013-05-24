@@ -67,10 +67,21 @@
 int numOne = 14;
 int numTwo = 27;
 int result = [self addOne:numOne addTwo:numTwo];
-NSString*addAlert = [NSString stringWithFormat:@"The sum of %d + %d is %d", numOne, numTwo, result];
-[self displayAlertWithString:addAlert];
+//NSString*addAlert = [NSString stringWithFormat:@"The sum of %d + %d is %d", numOne, numTwo, result];
+//[self displayAlertWithString:addAlert];
     
-//7. Bundle the result of add function 
+//7. NSNumber conversion
+
+NSNumber* number = [NSNumber numberWithInteger:result];
+NSNumberFormatter * formattedNum = [[NSNumberFormatter alloc] init];
+[formattedNum setNumberStyle:NSNumberFormatterDecimalStyle];
+NSString *convertedNum = [formattedNum stringForObjectValue:number];
+
+//8. Pass the string to displayAlertWithString function
+
+NSString *string = [NSString stringWithFormat:@"The number is %@",convertedNum];
+[self displayAlertWithString:string];
+
     
 //9. Calling the Compare function to compare y1 & y2
     
