@@ -11,7 +11,6 @@
 @interface ViewController : UIViewController
 {
 
-
 }
 
 //------Functions--------
