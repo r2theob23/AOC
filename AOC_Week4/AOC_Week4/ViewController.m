@@ -20,7 +20,7 @@
     self.view.backgroundColor = [UIColor darkGrayColor];
     
     //Username
-    UILabel *userName = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 90.0f, 30.0f)];
+    userName = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 90.0f, 30.0f)];
     if (userName != nil)
     {
         userName.text = @"Username: "; 
@@ -29,10 +29,16 @@
     }
     
     //Text Field
+    textField = [[UITextField alloc] initWithFrame:CGRectMake(100.0f, 12.5f, 200.0f, 30.0f)];
+    if (textField != nil)
+    {
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+    }
     
-    //Make Username label visable
+    
+    //Make Elements visable
     [self.view addSubview:userName];
-    
+    [self.view addSubview:textField];
     
     
     [super viewDidLoad];
