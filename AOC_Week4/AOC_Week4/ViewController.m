@@ -36,12 +36,12 @@
     }
     
     //First Button
-    buttonOne = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    if (buttonOne != nil)
+    loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (loginButton != nil)
     {
     
-        buttonOne.frame = CGRectMake(200.0f, 50.0f, 100.0f, 40.0f);
-        [buttonOne setTitle:@"Login" forState:UIControlStateNormal];
+        loginButton.frame = CGRectMake(200.0f, 55.0f, 100.0f, 40.0f);
+        [loginButton setTitle:@"Login" forState:UIControlStateNormal];
 
     }
     
@@ -56,14 +56,30 @@
     
     }
     
+    //Date Button
+    dateButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (dateButton != nil) {
+        
+        dateButton.frame = CGRectMake(10.0f, 210.0f, 100.0f, 40.0f);
+        [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
+    }
+    
     //Info Button
+    infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    if (infoButton != nil)
+    {
+    
+        infoButton.frame = CGRectMake(10.0f, 300.0f, 20.0f, 20.0f);
     
     
+    }
     //Make Elements visable
     [self.view addSubview:userName];
     [self.view addSubview:textField];
-    [self.view addSubview:buttonOne];
+    [self.view addSubview:loginButton];
     [self.view addSubview:enterUsername];
+    [self.view addSubview:dateButton];
+    [self.view addSubview:infoButton];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

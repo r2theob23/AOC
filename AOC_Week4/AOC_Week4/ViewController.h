@@ -13,9 +13,10 @@
 
     UILabel * userName;
     UITextField * textField;
-    UIButton * buttonOne;
+    UIButton * loginButton;
     UILabel * enterUsername;
-    
+    UIButton * dateButton;
+    UIButton * infoButton;
 
 
 
