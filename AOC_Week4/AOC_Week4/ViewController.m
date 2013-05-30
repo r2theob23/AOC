@@ -19,6 +19,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad
 {
     //Backround Color
@@ -38,6 +39,8 @@
     if (textField != nil)
     {
         textField.borderStyle = UITextBorderStyleRoundedRect;
+        // Closes the keyboard when "return" is pressed.
+         [textField addTarget:self action:@selector(resignFirstResponder)forControlEvents:UIControlEventEditingDidEndOnExit];
     }
     
     //Login Button
@@ -87,12 +90,13 @@
     }
     
     //authours name
-    authorsName = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 110.0f, 320.0f, 70.0f)];
+    authorsName = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 320.0f, 320.0f, 70.0f)];
     if (authorsName != nil)
     {
         
         [authorsName setBackgroundColor:[UIColor clearColor]];
         authorsName.textColor = [UIColor whiteColor];
+        authorsName.numberOfLines = 2;
     
     }
     
@@ -111,7 +115,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-//onClick Function is called when buttons are pressed 
+//onClick Function is called when buttons are pressed
 -(void)onClick:(UIButton*)button
 {
     //When Login Button is pressed, users info is displayed 
@@ -132,6 +136,7 @@
     if (button.tag == dateButton)
     {
         {
+            //Create a NSDate using "date" which sets "today" as the current date and time.
             today = [NSDate date];
             dateFormat = [[NSDateFormatter alloc] init];
             if (dateFormat != nil)
@@ -151,8 +156,16 @@
         }
         
     }
+    //end date function
+    //Display Author's name
+    if (button.tag == infoButton)
+    {
+        if (authorsName != nil)
+        {
+            authorsName.text = @"This application was written by Robert Smith";
+        }
 
-
+    }
 
 }
 
