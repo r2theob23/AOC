@@ -19,7 +19,7 @@
     //Backround Color
     self.view.backgroundColor = [UIColor darkGrayColor];
     
-    //Username
+    //Username label
     userName = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 90.0f, 30.0f)];
     if (userName != nil)
     {
@@ -35,10 +35,21 @@
         textField.borderStyle = UITextBorderStyleRoundedRect;
     }
     
+    //First Button
+    buttonOne = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (buttonOne != nil)
+    {
+    
+        buttonOne.frame = CGRectMake(200.0f, 50.0f, 100.0f, 40.0f);
+        [buttonOne setTitle:@"Login" forState:UIControlStateNormal];
+
+    }
+    
     
     //Make Elements visable
     [self.view addSubview:userName];
     [self.view addSubview:textField];
+    [self.view addSubview:buttonOne];
     
     
     [super viewDidLoad];

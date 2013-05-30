@@ -11,12 +11,11 @@
 @interface ViewController : UIViewController
 {
 
-    UILabel *userName;
+    UILabel * userName;
     UITextField * textField;
+    UIButton * buttonOne;
     
-
-
-
+    
 
 
 
