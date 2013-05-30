@@ -100,6 +100,38 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+//onClick Function is called when buttons are pressed 
+-(void)onClick:(UIButton*)button
+{
+    //When Login Button is pressed, users info is displayed 
+    if (button.tag == loginButton)
+    {
+        input = textField.text;
+        if (input.length > 0)
+        {
+            enterUsername.text = [NSString stringWithFormat:@"User: %@ has been logged in.", input];
+        }
+        else
+        {
+            enterUsername.text = @"Username cannot be empty";
+        }
+    }
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
