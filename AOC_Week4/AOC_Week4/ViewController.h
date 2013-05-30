@@ -14,7 +14,7 @@
     UILabel * userName;
     UITextField * textField;
     UIButton * buttonOne;
-    
+    UILabel * enterUsername;
     
 
 

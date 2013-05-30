@@ -45,12 +45,25 @@
 
     }
     
+    //Enter Username UILabel
+    enterUsername = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 110.0f, 320.0f, 70.0f)];
+    if (enterUsername != nil);
+    {
+    
+        enterUsername.text = @"Please Enter Username";
+        enterUsername.textColor = [UIColor blueColor];
+        enterUsername.textAlignment = NSTextAlignmentCenter;
+    
+    }
+    
+    //Info Button
+    
     
     //Make Elements visable
     [self.view addSubview:userName];
     [self.view addSubview:textField];
     [self.view addSubview:buttonOne];
-    
+    [self.view addSubview:enterUsername];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
