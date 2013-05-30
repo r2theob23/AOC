@@ -16,6 +16,25 @@
 
 - (void)viewDidLoad
 {
+    //Backround Color
+    self.view.backgroundColor = [UIColor darkGrayColor];
+    
+    //Username
+    UILabel *userName = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 90.0f, 30.0f)];
+    if (userName != nil)
+    {
+        userName.text = @"Username: "; 
+        userName.textColor = [UIColor whiteColor];
+        [userName setBackgroundColor: [UIColor clearColor]];
+    }
+    
+    //Text Field
+    
+    //Make Username label visable
+    [self.view addSubview:userName];
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
