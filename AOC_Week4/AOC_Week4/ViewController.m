@@ -86,6 +86,16 @@
     
     }
     
+    //authours name
+    authorsName = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 110.0f, 320.0f, 70.0f)];
+    if (authorsName != nil)
+    {
+        
+        [authorsName setBackgroundColor:[UIColor clearColor]];
+        authorsName.textColor = [UIColor whiteColor];
+    
+    }
+    
     
     
     //Make Elements visable
@@ -95,7 +105,8 @@
     [self.view addSubview:enterUsername];
     [self.view addSubview:showDate];
     [self.view addSubview:showInfo];
-    
+    [self.view addSubview:authorsName];
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -116,16 +127,30 @@
             enterUsername.text = @"Username cannot be empty";
         }
     }
-    
-    
-    
-
-
-
-
-
-
-
+    //end login if statement
+    //When Show Date button is pressed, an alertview with the date will appear
+    if (button.tag == dateButton)
+    {
+        {
+            today = [NSDate date];
+            dateFormat = [[NSDateFormatter alloc] init];
+            if (dateFormat != nil)
+            {
+                [dateFormat setDateFormat:@"MMMM d, y  h:mm:ssa  zzzz"];
+                
+                alertView = [[UIAlertView alloc] initWithTitle:@"Date" message:[NSString stringWithFormat:@"%@", [dateFormat stringFromDate:today]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                if (alertView != nil)
+                {
+                    [alertView show];
+                }
+                else
+                {
+                    NSLog(@"Error");
+                }
+            }
+        }
+        
+    }
 
 
 

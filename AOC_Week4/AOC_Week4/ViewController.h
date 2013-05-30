@@ -17,7 +17,11 @@
     UILabel * enterUsername;
     UIButton * showDate;
     UIButton * showInfo;
+    UILabel * authorsName;
     NSString * input;
+    UIAlertView * alertView;
+    NSDate * today;
+    NSDateFormatter * dateFormat;
 
 
 }
