@@ -40,13 +40,14 @@
         textField.borderStyle = UITextBorderStyleRoundedRect;
     }
     
-    //First Button
+    //Login Button
     showLogin = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     if (showLogin != nil)
     {
     
         showLogin.frame = CGRectMake(200.0f, 55.0f, 100.0f, 40.0f);
         [showLogin setTitle:@"Login" forState:UIControlStateNormal];
+        showLogin.tag = loginButton;
 
     }
     
@@ -67,6 +68,7 @@
         
         showDate.frame = CGRectMake(10.0f, 210.0f, 100.0f, 40.0f);
         [showDate setTitle:@"Show Date" forState:UIControlStateNormal];
+        showDate.tag = dateButton;
     }
     
     //Info Button
@@ -75,6 +77,7 @@
     {
     
         showInfo.frame = CGRectMake(10.0f, 300.0f, 20.0f, 20.0f);
+        showInfo.tag = infoButton;
     
     
     }
