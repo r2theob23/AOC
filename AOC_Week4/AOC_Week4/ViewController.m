@@ -48,6 +48,8 @@
         showLogin.frame = CGRectMake(200.0f, 55.0f, 100.0f, 40.0f);
         [showLogin setTitle:@"Login" forState:UIControlStateNormal];
         showLogin.tag = loginButton;
+        [showLogin addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+
 
     }
     
@@ -69,6 +71,7 @@
         showDate.frame = CGRectMake(10.0f, 210.0f, 100.0f, 40.0f);
         [showDate setTitle:@"Show Date" forState:UIControlStateNormal];
         showDate.tag = dateButton;
+        [showDate addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     //Info Button
@@ -78,6 +81,7 @@
     
         showInfo.frame = CGRectMake(10.0f, 300.0f, 20.0f, 20.0f);
         showInfo.tag = infoButton;
+        [showInfo addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     
     
     }
