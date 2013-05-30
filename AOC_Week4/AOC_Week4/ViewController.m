@@ -12,6 +12,11 @@
 
 @end
 
+//Define Macros
+# define loginButton 0
+# define dateButton 1
+# define infoButton 2
+
 @implementation ViewController
 
 - (void)viewDidLoad
@@ -36,12 +41,12 @@
     }
     
     //First Button
-    loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    if (loginButton != nil)
+    showLogin = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (showLogin != nil)
     {
     
-        loginButton.frame = CGRectMake(200.0f, 55.0f, 100.0f, 40.0f);
-        [loginButton setTitle:@"Login" forState:UIControlStateNormal];
+        showLogin.frame = CGRectMake(200.0f, 55.0f, 100.0f, 40.0f);
+        [showLogin setTitle:@"Login" forState:UIControlStateNormal];
 
     }
     
@@ -57,29 +62,32 @@
     }
     
     //Date Button
-    dateButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    if (dateButton != nil) {
+    showDate = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (showDate != nil) {
         
-        dateButton.frame = CGRectMake(10.0f, 210.0f, 100.0f, 40.0f);
-        [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
+        showDate.frame = CGRectMake(10.0f, 210.0f, 100.0f, 40.0f);
+        [showDate setTitle:@"Show Date" forState:UIControlStateNormal];
     }
     
     //Info Button
-    infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    if (infoButton != nil)
+    showInfo = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    if (showInfo != nil)
     {
     
-        infoButton.frame = CGRectMake(10.0f, 300.0f, 20.0f, 20.0f);
+        showInfo.frame = CGRectMake(10.0f, 300.0f, 20.0f, 20.0f);
     
     
     }
+    
+    
+    
     //Make Elements visable
     [self.view addSubview:userName];
     [self.view addSubview:textField];
-    [self.view addSubview:loginButton];
+    [self.view addSubview:showLogin];
     [self.view addSubview:enterUsername];
-    [self.view addSubview:dateButton];
-    [self.view addSubview:infoButton];
+    [self.view addSubview:showDate];
+    [self.view addSubview:showInfo];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

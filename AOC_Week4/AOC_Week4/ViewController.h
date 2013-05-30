@@ -13,10 +13,10 @@
 
     UILabel * userName;
     UITextField * textField;
-    UIButton * loginButton;
+    UIButton * showLogin;
     UILabel * enterUsername;
-    UIButton * dateButton;
-    UIButton * infoButton;
+    UIButton * showDate;
+    UIButton * showInfo;
 
 
 
