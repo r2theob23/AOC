@@ -23,6 +23,11 @@
 		735FA9F51761442800765BD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735FA9D01761442700765BD3 /* Foundation.framework */; };
 		735FA9FD1761442800765BD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 735FA9FB1761442800765BD3 /* InfoPlist.strings */; };
 		735FAA001761442800765BD3 /* AOC2_Week1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FA9FF1761442800765BD3 /* AOC2_Week1Tests.m */; };
+		735FAA0B176153B400765BD3 /* productFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA0A176153B400765BD3 /* productFactory.m */; };
+		735FAA0E176153DA00765BD3 /* appleProductsBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA0D176153DA00765BD3 /* appleProductsBaseClass.m */; };
+		735FAA11176153F500765BD3 /* iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA10176153F500765BD3 /* iPhone.m */; };
+		735FAA141761540A00765BD3 /* iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA131761540A00765BD3 /* iPad.m */; };
+		735FAA171761541F00765BD3 /* macbookPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA161761541F00765BD3 /* macbookPro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,16 @@
 		735FA9FC1761442800765BD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		735FA9FE1761442800765BD3 /* AOC2_Week1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2_Week1Tests.h; sourceTree = "<group>"; };
 		735FA9FF1761442800765BD3 /* AOC2_Week1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2_Week1Tests.m; sourceTree = "<group>"; };
+		735FAA09176153B400765BD3 /* productFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productFactory.h; sourceTree = "<group>"; };
+		735FAA0A176153B400765BD3 /* productFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productFactory.m; sourceTree = "<group>"; };
+		735FAA0C176153DA00765BD3 /* appleProductsBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appleProductsBaseClass.h; sourceTree = "<group>"; };
+		735FAA0D176153DA00765BD3 /* appleProductsBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = appleProductsBaseClass.m; sourceTree = "<group>"; };
+		735FAA0F176153F500765BD3 /* iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone.h; sourceTree = "<group>"; };
+		735FAA10176153F500765BD3 /* iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhone.m; sourceTree = "<group>"; };
+		735FAA121761540A00765BD3 /* iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPad.h; sourceTree = "<group>"; };
+		735FAA131761540A00765BD3 /* iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPad.m; sourceTree = "<group>"; };
+		735FAA151761541F00765BD3 /* macbookPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macbookPro.h; sourceTree = "<group>"; };
+		735FAA161761541F00765BD3 /* macbookPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = macbookPro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +138,16 @@
 				735FA9E91761442800765BD3 /* ViewController.h */,
 				735FA9EA1761442800765BD3 /* ViewController.m */,
 				735FA9D51761442700765BD3 /* Supporting Files */,
+				735FAA09176153B400765BD3 /* productFactory.h */,
+				735FAA0A176153B400765BD3 /* productFactory.m */,
+				735FAA0C176153DA00765BD3 /* appleProductsBaseClass.h */,
+				735FAA0D176153DA00765BD3 /* appleProductsBaseClass.m */,
+				735FAA0F176153F500765BD3 /* iPhone.h */,
+				735FAA10176153F500765BD3 /* iPhone.m */,
+				735FAA121761540A00765BD3 /* iPad.h */,
+				735FAA131761540A00765BD3 /* iPad.m */,
+				735FAA151761541F00765BD3 /* macbookPro.h */,
+				735FAA161761541F00765BD3 /* macbookPro.m */,
 			);
 			path = AOC2_Week1;
 			sourceTree = "<group>";
@@ -273,6 +298,11 @@
 				735FA9DB1761442700765BD3 /* main.m in Sources */,
 				735FA9DF1761442700765BD3 /* AppDelegate.m in Sources */,
 				735FA9EB1761442800765BD3 /* ViewController.m in Sources */,
+				735FAA0B176153B400765BD3 /* productFactory.m in Sources */,
+				735FAA0E176153DA00765BD3 /* appleProductsBaseClass.m in Sources */,
+				735FAA11176153F500765BD3 /* iPhone.m in Sources */,
+				735FAA141761540A00765BD3 /* iPad.m in Sources */,
+				735FAA171761541F00765BD3 /* macbookPro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
