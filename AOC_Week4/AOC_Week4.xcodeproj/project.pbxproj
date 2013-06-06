@@ -467,6 +467,7 @@
 				737905371754FD8300E10B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		737905381754FD8300E10B18 /* Build configuration list for PBXNativeTarget "AOC_Week4Tests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +476,7 @@
 				7379053A1754FD8300E10B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
