@@ -12,4 +12,29 @@
 
 @synthesize contract, generation;
 
+-(id)init
+{
+    self = [super init];
+    if (self != nil)
+    {
+        [self setPrice:200];
+        [self setContract:TRUE];
+        [self setGeneration:5];
+    }
+    return self;
+}
+
+-(void)calculatePrice
+{
+    if (contract == TRUE && generation == 5)
+    {
+        [self setPrice:200];
+        [self setProductName:@"iPhone 5"];
+        [self setProductType:@"Phone"];
+    }else{
+        NSLog(@"Error");
+    }
+}
+
+
 @end

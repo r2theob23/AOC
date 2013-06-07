@@ -10,4 +10,17 @@
 
 @interface ViewController : UIViewController
 
+{
+    UILabel * title;
+    UILabel * iphoneLable;
+    UILabel * ipadLabel;
+    UILabel * macbookproLabel;
+
+}
+
+
+
+
+
+
 @end

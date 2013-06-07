@@ -13,7 +13,19 @@
 
 +(appleProductsBaseClass *)createNewProduct: (int)productType;
 {
-
+    if (productType == IPHONE)
+    {
+        return [[iPhone alloc] init];
+    }
+    if (productType == IPAD)
+    {
+        return [[iPad alloc] init];
+    }
+    if (productType == MACBOOKPRO)
+    {
+        return [[macbookPro alloc] init];
+    }
+    else return nil;
 
 };
 
