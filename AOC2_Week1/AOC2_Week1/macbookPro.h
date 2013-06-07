@@ -10,6 +10,7 @@
 
 @interface macbookPro : appleProductsBaseClass
 
+//Data members
 @property BOOL retenia;
 @property int screenSizeInInches;
 

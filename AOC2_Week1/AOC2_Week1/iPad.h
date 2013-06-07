@@ -10,6 +10,8 @@
 
 @interface iPad : appleProductsBaseClass
 
+
+//Data members
 @property int gigs;
 @property BOOL mini;
 

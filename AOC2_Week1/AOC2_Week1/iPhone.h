@@ -10,6 +10,7 @@
 
 @interface iPhone : appleProductsBaseClass
 
+//Data members
 @property BOOL contract;
 @property int generation;
 

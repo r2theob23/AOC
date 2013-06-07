@@ -13,8 +13,12 @@
 {
     UILabel * title;
     UILabel * iphoneLable;
+    UILabel * iphoneLable2;
     UILabel * ipadLabel;
+    UILabel * ipadLabel2;
     UILabel * macbookproLabel;
+    UILabel * macbookproLabel2;
+
 
 }
 

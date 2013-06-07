@@ -12,6 +12,7 @@
 
 @synthesize productName, productType, price;
 
+//Default
 -(id)init
 {
     self = [super init];
@@ -24,6 +25,7 @@
     return self;
 }
 
+//default function
 -(void)calculatePrice
 {
 

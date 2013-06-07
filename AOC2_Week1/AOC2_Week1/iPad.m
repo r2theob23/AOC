@@ -24,13 +24,14 @@
     return self;
 }
 
+//Overwrite
 -(void)calculatePrice
 {
-    if (gigs < 16 && mini == TRUE)
+    if (gigs <= 16 && mini == TRUE)
     {
         [self setPrice:329];
         [self setProductName:@"iPad Mini"];
-        [self setProductType:@"Tablet"];
+        [self setProductType:@"tablet"];
     }else{
         NSLog(@"Error");
     }

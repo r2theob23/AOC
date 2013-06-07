@@ -24,13 +24,14 @@
     return self;
 }
 
+//Overwrite
 -(void)calculatePrice
 {
     if (contract == TRUE && generation == 5)
     {
         [self setPrice:200];
         [self setProductName:@"iPhone 5"];
-        [self setProductType:@"Phone"];
+        [self setProductType:@"phone"];
     }else{
         NSLog(@"Error");
     }

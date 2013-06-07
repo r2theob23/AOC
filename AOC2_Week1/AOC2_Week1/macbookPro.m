@@ -17,20 +17,21 @@
     self = [super init];
     if (self != nil)
     {
-        [self setPrice:200];
+        [self setPrice:1499];
         [self setRetenia:FALSE];
         [self setScreenSizeInInches:13];
     }
     return self;
 }
 
+//Overwrite
 -(void)calculatePrice
 {
      if (retenia == FALSE && screenSizeInInches < 15)
      {
-         [self setPrice:200];
+         [self setPrice:1499];
          [self setProductName:@"Macbook Pro"];
-         [self setProductType:@"Laptop"];
+         [self setProductType:@"laptop"];
      }else{
          NSLog(@"Error");
      }

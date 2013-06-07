@@ -12,6 +12,8 @@
 
 
 +(appleProductsBaseClass *)createNewProduct: (int)productType;
+
+//
 {
     if (productType == IPHONE)
     {
