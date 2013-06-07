@@ -10,4 +10,6 @@
 
 @implementation iPhone
 
+@synthesize contract, generation;
+
 @end

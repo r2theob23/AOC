@@ -10,4 +10,6 @@
 
 @implementation iPad
 
+@synthesize gigs, mini;
+
 @end
