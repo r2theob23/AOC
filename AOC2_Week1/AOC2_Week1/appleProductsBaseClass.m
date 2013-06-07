@@ -10,4 +10,25 @@
 
 @implementation appleProductsBaseClass
 
+@synthesize productName, productType, price;
+
+-(id)init
+{
+    self = [super init];
+    if (self != nil)
+    {
+        [self setProductName:nil];
+        [self setProductType:nil];
+        [self setPrice:0];
+    }
+    return self;
+}
+
+-(void)calculatePrice
+{
+
+    NSLog(@"This product costs %i dollars", price);
+
+}
+
 @end

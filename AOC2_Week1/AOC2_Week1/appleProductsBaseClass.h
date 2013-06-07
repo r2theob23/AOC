@@ -10,4 +10,22 @@
 
 @interface appleProductsBaseClass : NSObject
 
+{
+    int productEnum;
+}
+
+typedef enum {
+    IPHONE,
+    IPAD,
+    MACBOOKPRO
+} productEnum;
+
+@property NSString *productName;
+@property NSString *productType;
+@property int price;
+
+-(id)init;
+
+-(void)calculatePrice;
+
 @end

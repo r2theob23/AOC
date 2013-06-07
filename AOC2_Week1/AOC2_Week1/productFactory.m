@@ -10,4 +10,11 @@
 
 @implementation productFactory
 
+
++(appleProductsBaseClass *)createNewProduct: (int)productType;
+{
+
+
+};
+
 @end

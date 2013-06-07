@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "appleProductsBaseClass.h"
+#import "iPhone.h"
+#import "iPad.h"
+#import "macbookPro.h"
 
 @interface productFactory : NSObject
+
++(appleProductsBaseClass *)createNewProduct: (int)productType;
+
 
 @end
