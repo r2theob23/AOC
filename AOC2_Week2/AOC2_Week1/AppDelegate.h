@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  AOC2_Week1
 //
 //  Created by Robert Smith on 6/6/13.
@@ -8,17 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-{
-
-
-
-}
-
-
-
-
-
+@property (strong, nonatomic) UIWindow *window;
 
 @end
