@@ -1,8 +1,8 @@
 //
 //  main.m
-//  AOC2_Week1
+//  AOC2_Week2
 //
-//  Created by Robert Smith on 6/6/13.
+//  Created by Robert Smith on 6/10/13.
 //  Copyright (c) 2013 Robert Smith. All rights reserved.
 //
 

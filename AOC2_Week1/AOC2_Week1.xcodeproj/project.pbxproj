@@ -28,7 +28,6 @@
 		735FAA11176153F500765BD3 /* iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA10176153F500765BD3 /* iPhone.m */; };
 		735FAA141761540A00765BD3 /* iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA131761540A00765BD3 /* iPad.m */; };
 		735FAA171761541F00765BD3 /* macbookPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 735FAA161761541F00765BD3 /* macbookPro.m */; };
-		73EB228F1766ABB300FDD0B7 /* AOC2_Week2 in Resources */ = {isa = PBXBuildFile; fileRef = 73EB228E1766ABB300FDD0B7 /* AOC2_Week2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 		735FAA131761540A00765BD3 /* iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPad.m; sourceTree = "<group>"; };
 		735FAA151761541F00765BD3 /* macbookPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macbookPro.h; sourceTree = "<group>"; };
 		735FAA161761541F00765BD3 /* macbookPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = macbookPro.m; sourceTree = "<group>"; };
-		73EB228E1766ABB300FDD0B7 /* AOC2_Week2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AOC2_Week2; path = ../../AOC2_Week2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +136,6 @@
 				735FA9DE1761442700765BD3 /* AppDelegate.m */,
 				735FA9E61761442800765BD3 /* MainStoryboard.storyboard */,
 				735FA9E91761442800765BD3 /* ViewController.h */,
-				73EB228E1766ABB300FDD0B7 /* AOC2_Week2 */,
 				735FA9EA1761442800765BD3 /* ViewController.m */,
 				735FA9D51761442700765BD3 /* Supporting Files */,
 				735FAA09176153B400765BD3 /* productFactory.h */,
@@ -264,7 +261,6 @@
 				735FA9E31761442700765BD3 /* Default@2x.png in Resources */,
 				735FA9E51761442700765BD3 /* Default-568h@2x.png in Resources */,
 				735FA9E81761442800765BD3 /* MainStoryboard.storyboard in Resources */,
-				73EB228F1766ABB300FDD0B7 /* AOC2_Week2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
