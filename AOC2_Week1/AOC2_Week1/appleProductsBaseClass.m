@@ -26,7 +26,7 @@
 }
 
 //default function
--(void)calculatePrice
+-(void)calculat
 {
 
     NSLog(@"This product costs %i dollars", price);

@@ -23,6 +23,11 @@
 		73EB22C51766AE1C00FDD0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB22A01766AE1C00FDD0B7 /* Foundation.framework */; };
 		73EB22CD1766AE1C00FDD0B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22CB1766AE1C00FDD0B7 /* InfoPlist.strings */; };
 		73EB22D01766AE1C00FDD0B7 /* AOC2_Week2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22CF1766AE1C00FDD0B7 /* AOC2_Week2Tests.m */; };
+		73EB22DB1766AF3800FDD0B7 /* productFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22DA1766AF3800FDD0B7 /* productFactory.m */; };
+		73EB22DE1766AF4D00FDD0B7 /* baseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22DD1766AF4D00FDD0B7 /* baseClass.m */; };
+		73EB22E11766AF7A00FDD0B7 /* iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22E01766AF7A00FDD0B7 /* iphone.m */; };
+		73EB22E41766AF9200FDD0B7 /* ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22E31766AF9200FDD0B7 /* ipad.m */; };
+		73EB22E71766AFAC00FDD0B7 /* ipod.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22E61766AFAC00FDD0B7 /* ipod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,16 @@
 		73EB22CC1766AE1C00FDD0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EB22CE1766AE1C00FDD0B7 /* AOC2_Week2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2_Week2Tests.h; sourceTree = "<group>"; };
 		73EB22CF1766AE1C00FDD0B7 /* AOC2_Week2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2_Week2Tests.m; sourceTree = "<group>"; };
+		73EB22D91766AF3800FDD0B7 /* productFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productFactory.h; sourceTree = "<group>"; };
+		73EB22DA1766AF3800FDD0B7 /* productFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productFactory.m; sourceTree = "<group>"; };
+		73EB22DC1766AF4D00FDD0B7 /* baseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseClass.h; sourceTree = "<group>"; };
+		73EB22DD1766AF4D00FDD0B7 /* baseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseClass.m; sourceTree = "<group>"; };
+		73EB22DF1766AF7A00FDD0B7 /* iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone.h; sourceTree = "<group>"; };
+		73EB22E01766AF7A00FDD0B7 /* iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iphone.m; sourceTree = "<group>"; };
+		73EB22E21766AF9200FDD0B7 /* ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipad.h; sourceTree = "<group>"; };
+		73EB22E31766AF9200FDD0B7 /* ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ipad.m; sourceTree = "<group>"; };
+		73EB22E51766AFAC00FDD0B7 /* ipod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipod.h; sourceTree = "<group>"; };
+		73EB22E61766AFAC00FDD0B7 /* ipod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ipod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +138,16 @@
 				73EB22B91766AE1C00FDD0B7 /* ViewController.h */,
 				73EB22BA1766AE1C00FDD0B7 /* ViewController.m */,
 				73EB22A51766AE1C00FDD0B7 /* Supporting Files */,
+				73EB22D91766AF3800FDD0B7 /* productFactory.h */,
+				73EB22DA1766AF3800FDD0B7 /* productFactory.m */,
+				73EB22DC1766AF4D00FDD0B7 /* baseClass.h */,
+				73EB22DD1766AF4D00FDD0B7 /* baseClass.m */,
+				73EB22DF1766AF7A00FDD0B7 /* iphone.h */,
+				73EB22E01766AF7A00FDD0B7 /* iphone.m */,
+				73EB22E21766AF9200FDD0B7 /* ipad.h */,
+				73EB22E31766AF9200FDD0B7 /* ipad.m */,
+				73EB22E51766AFAC00FDD0B7 /* ipod.h */,
+				73EB22E61766AFAC00FDD0B7 /* ipod.m */,
 			);
 			path = AOC2_Week2;
 			sourceTree = "<group>";
@@ -273,6 +298,11 @@
 				73EB22AB1766AE1C00FDD0B7 /* main.m in Sources */,
 				73EB22AF1766AE1C00FDD0B7 /* AppDelegate.m in Sources */,
 				73EB22BB1766AE1C00FDD0B7 /* ViewController.m in Sources */,
+				73EB22DB1766AF3800FDD0B7 /* productFactory.m in Sources */,
+				73EB22DE1766AF4D00FDD0B7 /* baseClass.m in Sources */,
+				73EB22E11766AF7A00FDD0B7 /* iphone.m in Sources */,
+				73EB22E41766AF9200FDD0B7 /* ipad.m in Sources */,
+				73EB22E71766AFAC00FDD0B7 /* ipod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
