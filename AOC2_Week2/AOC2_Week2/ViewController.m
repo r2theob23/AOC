@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad
 {
+    //----------------------------------Start AOC 2 Project 2-------------------------------------------
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -24,6 +26,21 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)device:(id)sender
+{
+}
+-(IBAction)calculate:(id)sender
+{
+}
+-(IBAction)info:(id)sender
+{
+}
+-(IBAction)stepperChange:(id)sender
+{
+}
+-(IBAction)segmentChange:(id)sender
+{
 }
 
 @end

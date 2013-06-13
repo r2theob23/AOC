@@ -33,6 +33,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selected Device" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAl-5Y-L8B">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4H0-cg-RRu"/>
                                     <constraint firstAttribute="width" constant="228" id="WLJ-i0-klr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,7 +47,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oUF-uT-3mV"/>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oUF-uT-3mV">
+                                <connections>
+                                    <action selector="stepperChange:" destination="2" eventType="touchUpInside" id="DHy-9Q-R7B"/>
+                                </connections>
+                            </stepper>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-b5-RAV">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="wrT-aW-kE0"/>
@@ -58,6 +63,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="device:" destination="2" eventType="touchUpInside" id="cKX-Xm-HLv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVd-Ph-bsf">
                                 <constraints>
@@ -71,6 +79,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="device:" destination="2" eventType="touchUpInside" id="kcc-6v-B8h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-jT-5ec">
                                 <constraints>
@@ -84,6 +95,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="device:" destination="2" eventType="touchUpInside" id="1KH-5J-Lqw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCW-LF-fGb">
                                 <constraints>
@@ -97,6 +111,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculate:" destination="2" eventType="touchUpInside" id="2zH-PH-awc"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XP3-8F-szX">
                                 <constraints>
@@ -107,6 +124,9 @@
                                     <segment title="Red"/>
                                     <segment title="Yellow"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentChange:" destination="2" eventType="touchUpInside" id="x3B-bO-mu1"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cM-9A-LbS">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -122,15 +142,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XP3-8F-szX" firstAttribute="centerX" secondItem="kXV-a7-01w" secondAttribute="centerX" type="default" id="1T3-mg-SVB"/>
-                            <constraint firstItem="tAl-5Y-L8B" firstAttribute="centerY" secondItem="jNJ-mX-U2q" secondAttribute="centerY" type="default" id="4O1-sa-fZE"/>
                             <constraint firstItem="Upv-b5-RAV" firstAttribute="trailing" secondItem="tAl-5Y-L8B" secondAttribute="trailing" type="default" id="5c6-nt-ssV"/>
                             <constraint firstItem="kXV-a7-01w" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="6jW-g9-ptz"/>
                             <constraint firstItem="kBK-jT-5ec" firstAttribute="trailing" secondItem="AVd-Ph-bsf" secondAttribute="trailing" type="default" id="8gT-JG-D2v"/>
+                            <constraint firstItem="tAl-5Y-L8B" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="82" id="AYr-eD-mOy"/>
                             <constraint firstItem="kBK-jT-5ec" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BCB-FM-jdf"/>
-                            <constraint firstItem="oUF-uT-3mV" firstAttribute="bottom" secondItem="mQZ-sT-Qub" secondAttribute="bottom" type="default" id="DIT-Oj-urp"/>
                             <constraint firstItem="Upv-b5-RAV" firstAttribute="trailing" secondItem="AVd-Ph-bsf" secondAttribute="trailing" type="default" id="LvI-SD-2on"/>
                             <constraint firstItem="XP3-8F-szX" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="NQ1-f0-yKi"/>
-                            <constraint firstItem="oUF-uT-3mV" firstAttribute="top" secondItem="tAl-5Y-L8B" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Oju-j5-fBL"/>
                             <constraint firstItem="tAl-5Y-L8B" firstAttribute="baseline" secondItem="jNJ-mX-U2q" secondAttribute="baseline" type="default" id="OlN-Bj-0fR"/>
                             <constraint firstItem="6cM-9A-LbS" firstAttribute="trailing" secondItem="DCW-LF-fGb" secondAttribute="trailing" type="default" id="RZo-wj-6hI"/>
                             <constraint firstItem="AVd-Ph-bsf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SX6-ih-Jlb"/>
@@ -138,14 +156,16 @@
                             <constraint firstItem="kXV-a7-01w" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="VUC-2H-diR"/>
                             <constraint firstAttribute="bottom" secondItem="DCW-LF-fGb" secondAttribute="bottom" constant="104" id="X5z-O9-D1Q"/>
                             <constraint firstAttribute="bottom" secondItem="kBK-jT-5ec" secondAttribute="bottom" constant="201" id="YSH-nc-ZjC"/>
+                            <constraint firstItem="jNJ-mX-U2q" firstAttribute="top" secondItem="3" secondAttribute="top" constant="77" id="Zx7-a8-8wB"/>
                             <constraint firstItem="jNJ-mX-U2q" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="5" id="b5s-cE-ysL"/>
+                            <constraint firstAttribute="bottom" secondItem="6cM-9A-LbS" secondAttribute="bottom" constant="54" id="cRN-M0-N0L"/>
                             <constraint firstItem="mQZ-sT-Qub" firstAttribute="leading" secondItem="jNJ-mX-U2q" secondAttribute="leading" type="default" id="g3u-lV-Kuh"/>
                             <constraint firstItem="DCW-LF-fGb" firstAttribute="trailing" secondItem="kBK-jT-5ec" secondAttribute="trailing" type="default" id="h7j-T8-hcd"/>
                             <constraint firstItem="kXV-a7-01w" firstAttribute="top" secondItem="3" secondAttribute="top" constant="13" id="hkb-rO-gaO"/>
                             <constraint firstItem="mQZ-sT-Qub" firstAttribute="trailing" secondItem="jNJ-mX-U2q" secondAttribute="trailing" type="default" id="l7Z-dw-uq4"/>
-                            <constraint firstAttribute="trailing" secondItem="6cM-9A-LbS" secondAttribute="trailing" constant="10" id="mfB-6e-zdS"/>
                             <constraint firstItem="AVd-Ph-bsf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="235" id="mpp-3P-tvV"/>
-                            <constraint firstAttribute="bottom" secondItem="6cM-9A-LbS" secondAttribute="bottom" constant="43" id="sRN-hg-tI7"/>
+                            <constraint firstItem="oUF-uT-3mV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="113" id="n6e-7x-eh7"/>
+                            <constraint firstItem="oUF-uT-3mV" firstAttribute="centerY" secondItem="mQZ-sT-Qub" secondAttribute="centerY" type="default" id="pyY-t5-h4A"/>
                             <constraint firstItem="Upv-b5-RAV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tRF-Va-CR3"/>
                             <constraint firstItem="tAl-5Y-L8B" firstAttribute="top" secondItem="3" secondAttribute="top" constant="73" id="tyK-dM-YCn"/>
                             <constraint firstItem="tAl-5Y-L8B" firstAttribute="leading" secondItem="oUF-uT-3mV" secondAttribute="leading" type="default" id="vwQ-lZ-RaO"/>
@@ -168,8 +188,18 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="calculate:"/>
+                <relationship kind="action" name="device:"/>
+                <relationship kind="action" name="info:"/>
+                <relationship kind="action" name="segmentChange:"/>
+                <relationship kind="action" name="stepperChange:"/>
+                <relationship kind="outlet" name="calculateButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="deviceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="deviceText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="multiplier" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="padButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="phoneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="podButton" candidateClass="UIButton"/>
             </relationships>
         </class>
     </classes>
