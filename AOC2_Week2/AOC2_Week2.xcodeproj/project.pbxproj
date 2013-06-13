@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73ADC571176A4CD2007D96E6 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73ADC570176A4CD2007D96E6 /* SecondView.xib */; };
 		73EB229F1766AE1C00FDD0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB229E1766AE1C00FDD0B7 /* UIKit.framework */; };
 		73EB22A11766AE1C00FDD0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB22A01766AE1C00FDD0B7 /* Foundation.framework */; };
 		73EB22A31766AE1C00FDD0B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB22A21766AE1C00FDD0B7 /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73ADC570176A4CD2007D96E6 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 		73EB229B1766AE1C00FDD0B7 /* AOC2_Week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2_Week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EB229E1766AE1C00FDD0B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		73EB22A01766AE1C00FDD0B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,6 +150,7 @@
 				73EB22E31766AF9200FDD0B7 /* ipad.m */,
 				73EB22E51766AFAC00FDD0B7 /* ipod.h */,
 				73EB22E61766AFAC00FDD0B7 /* ipod.m */,
+				73ADC570176A4CD2007D96E6 /* SecondView.xib */,
 			);
 			path = AOC2_Week2;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				73EB22B31766AE1C00FDD0B7 /* Default@2x.png in Resources */,
 				73EB22B51766AE1C00FDD0B7 /* Default-568h@2x.png in Resources */,
 				73EB22B81766AE1C00FDD0B7 /* MainStoryboard.storyboard in Resources */,
+				73ADC571176A4CD2007D96E6 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +487,7 @@
 				73EB22D51766AE1C00FDD0B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73EB22D61766AE1C00FDD0B7 /* Build configuration list for PBXNativeTarget "AOC2_Week2Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				73EB22D81766AE1C00FDD0B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
