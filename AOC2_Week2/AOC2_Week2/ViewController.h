@@ -10,4 +10,24 @@
 
 @interface ViewController : UIViewController
 
+{
+    //Labels and Text Fields
+    IBOutlet UILabel *deviceLabel;
+    IBOutlet UITextField *deviceText;
+    // Stepper
+    IBOutlet UIStepper *multiplier;
+    // Buttons
+    IBOutlet UIButton *phoneButton;
+    IBOutlet UIButton *padButton;
+    IBOutlet UIButton *podButton;
+    IBOutlet UIButton *calculateButton;
+}
+
+// Actions
+-(IBAction)device:(id)sender; // device buttons
+-(IBAction)calculate:(id)sender; // calculate button
+-(IBAction)info:(id)sender; // info button
+-(IBAction)stepperChange:(id)sender; // stepper
+-(IBAction)segmentChange:(id)sender; // segmented control
+
 @end
