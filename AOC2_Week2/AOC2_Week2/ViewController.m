@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "productFactory.h"
 #import "baseClass.h"
+#import "SecondView.h"
 
 @interface ViewController ()
 
@@ -132,11 +133,45 @@
     }
     
 }
+//Info button sends user to new view with developers info displayed
 -(IBAction)info:(id)sender
 {
+    SecondView *secondView = [[SecondView alloc]initWithNibName:@"SecondView"  bundle:nil];
+    if (secondView != nil)
+    {
+        [self presentViewController:secondView animated:TRUE completion:nil];
+    }
 }
+//Controls Background Color
 -(IBAction)segmentChange:(id)sender
 {
+    UISegmentedControl *colorSwitch = (UISegmentedControl*)sender;
+    if (colorSwitch != nil)
+    {
+        //grab selected index (zero based)
+        int _pressed = colorSwitch.selectedSegmentIndex;
+        
+        if (_pressed == 0)
+        {
+            self.view.backgroundColor = [UIColor lightGrayColor]; // Default
+            NSLog(@"Default Pressed");
+        }
+        else if (_pressed == 1)
+        {
+            self.view.backgroundColor = [UIColor redColor]; // red
+            NSLog(@"red Pressed");
+        }
+        else if (_pressed == 2)
+        {
+            self.view.backgroundColor = [UIColor yellowColor]; // Yellow
+            NSLog(@"Yellow Pressed");
+        }
+        else if (_pressed == 3)
+        {
+            self.view.backgroundColor = [UIColor blueColor]; // Blue
+            NSLog(@"Blue Pressed");
+        }
+    }
 }
 
 @end

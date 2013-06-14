@@ -118,12 +118,13 @@
                                     <constraint firstAttribute="width" constant="329" id="UZP-Jd-JfG"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Blue"/>
+                                    <segment title="Default"/>
                                     <segment title="Red"/>
                                     <segment title="Yellow"/>
+                                    <segment title="Blue"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segmentChange:" destination="2" eventType="touchUpInside" id="x3B-bO-mu1"/>
+                                    <action selector="segmentChange:" destination="2" eventType="valueChanged" id="sgl-Pm-o7a"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cM-9A-LbS">
@@ -185,28 +186,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="calculate:"/>
-                <relationship kind="action" name="device:"/>
-                <relationship kind="action" name="info:"/>
-                <relationship kind="action" name="segmentChange:"/>
-                <relationship kind="action" name="stepperChange:"/>
-                <relationship kind="outlet" name="calculateButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="deviceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="deviceText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="multiplier" candidateClass="UIStepper"/>
-                <relationship kind="outlet" name="padButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="phoneButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="podButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

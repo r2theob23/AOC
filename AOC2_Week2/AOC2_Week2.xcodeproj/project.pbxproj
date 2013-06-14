@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		73ADC571176A4CD2007D96E6 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73ADC570176A4CD2007D96E6 /* SecondView.xib */; };
 		73ADC572176AA30E007D96E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22AA1766AE1C00FDD0B7 /* main.m */; };
+		73ADC578176AAF3B007D96E6 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73ADC577176AAF3B007D96E6 /* SecondView.m */; };
 		73EB229F1766AE1C00FDD0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB229E1766AE1C00FDD0B7 /* UIKit.framework */; };
 		73EB22A11766AE1C00FDD0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB22A01766AE1C00FDD0B7 /* Foundation.framework */; };
 		73EB22A31766AE1C00FDD0B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB22A21766AE1C00FDD0B7 /* CoreGraphics.framework */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		73ADC570176A4CD2007D96E6 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		73ADC576176AAF3B007D96E6 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		73ADC577176AAF3B007D96E6 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
 		73EB229B1766AE1C00FDD0B7 /* AOC2_Week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2_Week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EB229E1766AE1C00FDD0B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		73EB22A01766AE1C00FDD0B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,6 +154,8 @@
 				73EB22E51766AFAC00FDD0B7 /* ipod.h */,
 				73EB22E61766AFAC00FDD0B7 /* ipod.m */,
 				73ADC570176A4CD2007D96E6 /* SecondView.xib */,
+				73ADC576176AAF3B007D96E6 /* SecondView.h */,
+				73ADC577176AAF3B007D96E6 /* SecondView.m */,
 			);
 			path = AOC2_Week2;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				73EB22E41766AF9200FDD0B7 /* ipad.m in Sources */,
 				73EB22E71766AFAC00FDD0B7 /* ipod.m in Sources */,
 				73ADC572176AA30E007D96E6 /* main.m in Sources */,
+				73ADC578176AAF3B007D96E6 /* SecondView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
