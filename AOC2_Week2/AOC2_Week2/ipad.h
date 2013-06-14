@@ -14,6 +14,7 @@
 @property int videoGigs;
 @property int bookGigs;
 @property int totalGigs;
+@property int numberOfIpads;
 
 
 //Override

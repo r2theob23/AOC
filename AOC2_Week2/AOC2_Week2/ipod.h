@@ -14,6 +14,7 @@
 @property int audioGigs;
 @property int podcastGigs;
 @property int totalGigs;
+@property int numberOfIpods;
 
 
 //Override

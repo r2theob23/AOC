@@ -10,7 +10,7 @@
 
 @implementation ipad
 
-@synthesize videoGigs, bookGigs, totalGigs;
+@synthesize videoGigs, bookGigs, totalGigs, numberOfIpads;
 
 //init to set ipad data
 -(id)init
@@ -21,7 +21,8 @@
         [self setDeviceName:@"iPad"];
         [self setTotalGigs:16];
         [self setVideoGigs:10];
-        [self setBookGigs:2];
+        [self setBookGigs:1];
+        [self setNumberOfIpads:1];
     }
     return self;
 }

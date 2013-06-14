@@ -10,7 +10,7 @@
 
 @implementation iphone
 
-@synthesize photoGigs, appGigs, totalGigs;
+@synthesize photoGigs, appGigs, totalGigs, numberOfIphones;
 
 //init to set iphone data
 -(id)init
@@ -22,6 +22,7 @@
         [self setTotalGigs:16];
         [self setPhotoGigs:4];
         [self setAppGigs:8];
+        [self setNumberOfIphones:1];
     }
     return self;
 }

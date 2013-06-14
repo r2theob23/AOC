@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		73ADC571176A4CD2007D96E6 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73ADC570176A4CD2007D96E6 /* SecondView.xib */; };
+		73ADC572176AA30E007D96E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22AA1766AE1C00FDD0B7 /* main.m */; };
 		73EB229F1766AE1C00FDD0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB229E1766AE1C00FDD0B7 /* UIKit.framework */; };
 		73EB22A11766AE1C00FDD0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB22A01766AE1C00FDD0B7 /* Foundation.framework */; };
 		73EB22A31766AE1C00FDD0B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB22A21766AE1C00FDD0B7 /* CoreGraphics.framework */; };
 		73EB22A91766AE1C00FDD0B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22A71766AE1C00FDD0B7 /* InfoPlist.strings */; };
-		73EB22AB1766AE1C00FDD0B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22AA1766AE1C00FDD0B7 /* main.m */; };
 		73EB22AF1766AE1C00FDD0B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EB22AE1766AE1C00FDD0B7 /* AppDelegate.m */; };
 		73EB22B11766AE1C00FDD0B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22B01766AE1C00FDD0B7 /* Default.png */; };
 		73EB22B31766AE1C00FDD0B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22B21766AE1C00FDD0B7 /* Default@2x.png */; };
@@ -299,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73EB22AB1766AE1C00FDD0B7 /* main.m in Sources */,
 				73EB22AF1766AE1C00FDD0B7 /* AppDelegate.m in Sources */,
 				73EB22BB1766AE1C00FDD0B7 /* ViewController.m in Sources */,
 				73EB22DB1766AF3800FDD0B7 /* productFactory.m in Sources */,
@@ -307,6 +306,7 @@
 				73EB22E11766AF7A00FDD0B7 /* iphone.m in Sources */,
 				73EB22E41766AF9200FDD0B7 /* ipad.m in Sources */,
 				73EB22E71766AFAC00FDD0B7 /* ipod.m in Sources */,
+				73ADC572176AA30E007D96E6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

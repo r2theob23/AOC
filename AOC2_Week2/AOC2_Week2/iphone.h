@@ -14,6 +14,7 @@
 @property int photoGigs;
 @property int appGigs;
 @property int totalGigs;
+@property int numberOfIphones;
 
 //Override
 -(void)calculateRemainingGigs;

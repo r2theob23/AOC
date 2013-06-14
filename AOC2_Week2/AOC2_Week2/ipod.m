@@ -10,7 +10,7 @@
 
 @implementation ipod
 
-@synthesize audioGigs, podcastGigs, totalGigs;
+@synthesize audioGigs, podcastGigs, totalGigs, numberOfIpods;
 
 //init to set ipod data
 -(id)init
@@ -22,6 +22,7 @@
         [self setTotalGigs:32];
         [self setAudioGigs:17];
         [self setPodcastGigs:3];
+        [self setNumberOfIpods:1];
     }
     return self;
 }
