@@ -9,10 +9,6 @@
 #import "SecondView.h"
 #import "ViewController.h"
 
-@interface SecondView ()
-
-@end
-
 @implementation SecondView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
