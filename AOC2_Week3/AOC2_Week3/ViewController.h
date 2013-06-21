@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddEventController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AddEventDelegate>
+
+{
+    IBOutlet UITextView *eventField; // TextView
+}
+
+-(IBAction)addEvent:(id)sender; // Add Event button
+
 
 @end
