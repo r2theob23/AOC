@@ -8,27 +8,29 @@
 
 #import "AddEventController.h"
 
+@end
 @interface AddEventController ()
 
 @end
 
 @implementation AddEventController
 
-@synthesize delegate;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        delegate = nil;
-        // Custom initialization
+        
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
+    swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeToClose addGestureRecognizer:swipeLeft];
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -99,10 +101,6 @@
             NSLog(@"Save was pressed");
             NSLog(@"%@", _eventSaved);
         }
-        
-        // Grabs _eventSaved and dateText
-        [delegate eventSaved:_eventSaved dateSaved:dateText];
-        
         [self dismissViewControllerAnimated:TRUE completion:nil];
     }
 }

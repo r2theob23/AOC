@@ -9,21 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-// Delegate that takes the new event back to the ViewController text view.
-@protocol AddEventDelegate <NSObject>
-
-@required
--(void)eventSaved:(NSString*)_eventSaved dateSaved:(NSString *)dateText;
-
-@end
-
-@interface AddEventController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate>
+@interface AddEventController : UIViewController
 {
     // Outlets
     IBOutlet UITextField *eventText; // TextField
     IBOutlet UIDatePicker *_date; // Date picker
+    IBOutlet UILabel *swipeToClose;
     
-    id<AddEventDelegate> delegate; // Creates AddEventDelegate
+    UISwipeGestureRecognizer *swipeLeft;
     
     NSString *_eventSaved;
     NSString *dateText;
@@ -33,6 +26,3 @@
 -(IBAction)closeKeyboard:(id)sender; //close
 -(IBAction)_picker:(id)sender;  //picker
 
-// Allows you to set the delegate from outside
-@property id<AddEventDelegate> delegate;
-@end

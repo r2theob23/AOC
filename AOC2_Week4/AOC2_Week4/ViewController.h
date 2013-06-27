@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "AddEventController.h"
 
-@interface ViewController : UIViewController <AddEventDelegate>
-
+@end
+@interface ViewController : UIViewController 
 {
     IBOutlet UITextView *eventField; // TextView
+    IBOutlet UILabel *swipeToAdd;
+    
+    UISwipeGestureRecognizer *swipeRight;
 }
 
--(IBAction)addEvent:(id)sender; // Add Event button
-
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 @end

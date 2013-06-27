@@ -16,10 +16,23 @@
 
 - (void)viewDidLoad
 {
+    swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeToAdd addGestureRecognizer:swipeRight];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    AddEventController *changePage = [[AddEventController alloc] initWithNibName:@"AddEventView" bundle:nil];
+    if (changePage != nil)
+    {
+        
+        [self presentViewController:changePage animated:true completion:nil];
+        NSLog(@"Swiped Right");
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -27,18 +40,6 @@
 }
 
 // Switch to Add Event Page
--(IBAction)addEvent:(id)sender
-{
-    AddEventController *changePage = [[AddEventController alloc] initWithNibName:@"AddEventScreen" bundle:nil];
-    if (changePage != nil)
-    {
-        changePage.delegate = self;
-        
-        [self presentViewController:changePage animated:true completion:nil];
-        NSLog(@"Add Event Button Pressed");
-    }
-}
-
 -(void)eventSaved:(NSString*)_eventSaved dateSaved:(NSString *)_dateSaved
 {
     // \n represents a new line (spaces) between events
