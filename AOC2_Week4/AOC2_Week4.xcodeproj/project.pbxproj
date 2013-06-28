@@ -25,6 +25,7 @@
 		7359A6F4177D098A007C3021 /* AOC2_Week4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7359A6F3177D098A007C3021 /* AOC2_Week4Tests.m */; };
 		7359A6FF177D09F1007C3021 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7359A6FE177D09F1007C3021 /* AddEventViewController.m */; };
 		7359A701177D0A3C007C3021 /* AddEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7359A700177D0A3C007C3021 /* AddEventView.xib */; };
+		7359A704177D0C71007C3021 /* singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7359A703177D0C71007C3021 /* singleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		7359A6FD177D09F1007C3021 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
 		7359A6FE177D09F1007C3021 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
 		7359A700177D0A3C007C3021 /* AddEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventView.xib; sourceTree = "<group>"; };
+		7359A702177D0C71007C3021 /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = "<group>"; };
+		7359A703177D0C71007C3021 /* singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +128,14 @@
 				7359A6D1177D098A007C3021 /* AppDelegate.h */,
 				7359A6D2177D098A007C3021 /* AppDelegate.m */,
 				7359A6DA177D098A007C3021 /* ViewController.h */,
-				7359A6FD177D09F1007C3021 /* AddEventViewController.h */,
-				7359A6FE177D09F1007C3021 /* AddEventViewController.m */,
 				7359A6DB177D098A007C3021 /* ViewController.m */,
 				7359A6DD177D098A007C3021 /* ViewController.xib */,
-				7359A6C9177D098A007C3021 /* Supporting Files */,
+				7359A6FD177D09F1007C3021 /* AddEventViewController.h */,
+				7359A6FE177D09F1007C3021 /* AddEventViewController.m */,
 				7359A700177D0A3C007C3021 /* AddEventView.xib */,
+				7359A702177D0C71007C3021 /* singleton.h */,
+				7359A703177D0C71007C3021 /* singleton.m */,
+				7359A6C9177D098A007C3021 /* Supporting Files */,
 			);
 			path = AOC2_Week4;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				7359A6D3177D098A007C3021 /* AppDelegate.m in Sources */,
 				7359A6DC177D098A007C3021 /* ViewController.m in Sources */,
 				7359A6FF177D09F1007C3021 /* AddEventViewController.m in Sources */,
+				7359A704177D0C71007C3021 /* singleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
