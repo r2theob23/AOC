@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AddEventViewController.h"
+#import "singleton.h"
 
 @interface ViewController : UIViewController
 
@@ -16,6 +17,7 @@
     
     IBOutlet UILabel *swipe; // Swipe Label
     UISwipeGestureRecognizer *swipeRight;
+    NSUserDefaults *userDefaults;
 }
 
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;

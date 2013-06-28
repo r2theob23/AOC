@@ -10,4 +10,18 @@
 
 @interface singleton : NSObject
 
+@property (nonatomic, strong)  NSString *event; //event string
+@property (nonatomic, strong) NSDate *date; //date string
+@property BOOL addEvent; //instance created then add new instance, new event
+
+
+//static
++(singleton*)GetInstance;
+
+//instance
++(void)CreateInstance;
+
+//creates string
+-(NSString*)eventString;
+
 @end

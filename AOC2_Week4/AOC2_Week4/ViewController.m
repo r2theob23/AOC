@@ -20,6 +20,25 @@
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [swipe addGestureRecognizer:swipeRight];
     
+    [singleton CreateInstance];
+    
+    userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    if ([userDefaults objectForKey:@"userEntries"] != nil)
+    {
+        textView.text = [userDefaults objectForKey:@"userEntries"];
+    }
+    
+    if ([[singleton GetInstance] addEvent] == TRUE)
+    {
+    	NSMutableString *text = [[NSMutableString alloc] initWithString:textView.text];
+        
+		[text appendString:[[singleton GetInstance] eventString]];
+        textView.text = text;
+        
+        [[singleton GetInstance] setAddEvent:FALSE];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -35,6 +54,18 @@
     }
 }
 
+-(IBAction)save:(id)sender
+{
+    NSString *userEntries = [[NSString alloc] initWithString:textView.text];
+    [userDefaults setObject:userEntries forKey:@"userEntries"];
+    
+    NSLog(@"%@", userEntries);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ALERT!" message:@"Your event has been saved!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    if (alert != nil) {
+        [alert show];
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

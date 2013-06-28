@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "singleton.h"
 
 @interface AddEventViewController : UIViewController
+
+{
+    IBOutlet UITextField *textField; //input text field
+    IBOutlet UIDatePicker *chooseDate;     //date
+    IBOutlet UIButton *closeKeyboard;      //close keyboard
+    IBOutlet UILabel *eventLabel; //event labels
+    UISwipeGestureRecognizer *swipeLeft; //left swipe gesture
+}
+
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer; //left swipe action
+-(IBAction)closeKeyboard:(id)sender; //close keyboard action
 
 @end
